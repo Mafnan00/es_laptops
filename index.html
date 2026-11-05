@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ES Laptops — Power Your Work &amp; Ideas | Inventory &amp; Accounting ERP</title>
+  <link rel="icon" type="image/jpeg" href="es.jpg" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter,Cinzel/Montserrat & JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #070709;
+      background-image: radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.08) 0%, transparent 55%);
+      color: #f4f4f5;
+    }
+    .font-brand {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fde68a 0%, #f59e0b 50%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .silver-gradient-text {
+      background: linear-gradient(135deg, #ffffff 0%, #d4d4d8 50%, #a1a1aa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-btn {
+      background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+      color: #09090b;
+    }
+    .gold-btn:hover {
+      background: linear-gradient(135deg, #fde68a 0%, #f59e0b 100%);
+    }
+    .card-luxury {
+      background: linear-gradient(180deg, rgba(24, 24, 27, 0.92) 0%, rgba(15, 15, 18, 0.96) 100%);
+      border: 1px solid rgba(245, 158, 11, 0.16);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-amber-500 selection:text-black">
+
+  <!-- ========================================== -->
+  <!-- TOAST NOTIFICATION                         -->
+  <!-- ========================================== -->
+  <div id="toast" class="hidden fixed bottom-5 right-5 z-50 bg-zinc-900 text-amber-300 px-4 py-3 rounded-xl shadow-2xl border border-amber-500/40 text-xs sm:text-sm font-semibold flex items-center gap-2.5">
+    <span class="w-5 h-5 rounded-full bg-amber-500 text-black flex items-center justify-center text-xs font-extrabold">✓</span>
+    <span id="toast-text">Saved successfully!</span>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MAIN APPLICATION HEADER (LOGO + GOLD THEME)-->
+  <!-- ========================================== -->
+  <header class="bg-zinc-950/95 backdrop-blur-md border-b border-amber-500/20 sticky top-0 z-30 px-4 lg:px-8 py-3.5 shadow-2xl">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+      <!-- Brand Logo (es.jpg) & Title -->
+      <div class="flex items-center gap-3.5">
+        <div class="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-black border-2 border-amber-500/50 shadow-lg shadow-amber-500/10 flex items-center justify-center overflow-hidden shrink-0">
+          <!-- Loads es.jpg from your project folder; falls back to embedded SVG of your exact logo in preview -->
+          <img
+            src="es.jpg"
+            alt="ES Laptops Logo"
+            class="w-full h-full object-cover rounded-full"
+            onerror="this.style.display='none'; document.getElementById('es-logo-fallback').classList.remove('hidden');"
+          />
+          <svg id="es-logo-fallback" class="hidden w-full h-full" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="58" fill="#050505" stroke="url(#goldGrad)" stroke-width="2.5"/>
+            <!-- Circuit lines left -->
+            <line x1="12" y1="50" x2="30" y2="50" stroke="#f59e0b" stroke-width="1.8"/>
+            <circle cx="10" cy="50" r="2.5" stroke="#f59e0b" stroke-width="1.5" fill="#050505"/>
+            <line x1="8" y1="58" x2="28" y2="58" stroke="#f59e0b" stroke-width="1.8"/>
+            <circle cx="6" cy="58" r="2.5" stroke="#f59e0b" stroke-width="1.5" fill="#050505"/>
+            <line x1="14" y1="66" x2="29" y2="66" stroke="#f59e0b" stroke-width="1.8"/>
+            <circle cx="12" cy="66" r="2.5" stroke="#f59e0b" stroke-width="1.5" fill="#050505"/>
+            <!-- Circuit lines right -->
+            <line x1="90" y1="50" x2="106" y2="50" stroke="#f59e0b" stroke-width="1.8"/>
+            <circle cx="108" cy="50" r="2.5" stroke="#f59e0b" stroke-width="1.5" fill="#050505"/>
+            <line x1="88" y1="58" x2="110" y2="58" stroke="#f59e0b" stroke-width="1.8"/>
+            <circle cx="112" cy="58" r="2.5" stroke="#f59e0b" stroke-width="1.5" fill="#050505"/>
+            <line x1="86" y1="66" x2="104" y2="66" stroke="#f59e0b" stroke-width="1.8"/>
+            <circle cx="106" cy="66" r="2.5" stroke="#f59e0b" stroke-width="1.5" fill="#050505"/>
+            <!-- Silver E & Gold S -->
+            <text x="27" y="68" font-family="Montserrat, sans-serif" font-weight="900" font-style="italic" font-size="38" fill="url(#silverGrad)">E</text>
+            <text x="55" y="68" font-family="Montserrat, sans-serif" font-weight="900" font-style="italic" font-size="38" fill="url(#goldGrad)">S</text>
+            <!-- Gold LAPTOPS text -->
+            <text x="60" y="86" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="800" font-size="11" letter-spacing="3" fill="url(#goldGrad)">LAPTOPS</text>
+            <text x="60" y="96" text-anchor="middle" font-family="Inter, sans-serif" font-weight="600" font-size="4.5" letter-spacing="1.2" fill="#d4d4d8">POWER YOUR WORK &amp; IDEAS</text>
+            <defs>
+              <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#fde68a"/>
+                <stop offset="50%" stop-color="#f59e0b"/>
+                <stop offset="100%" stop-color="#b45309"/>
+              </linearGradient>
+              <linearGradient id="silverGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="50%" stop-color="#d4d4d8"/>
+                <stop offset="100%" stop-color="#71717a"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-2.5">
+            <h1 class="font-brand text-lg sm:text-2xl font-black tracking-wider uppercase">
+              <span class="silver-gradient-text">ES</span>
+              <span class="gold-gradient-text"> LAPTOPS</span>
+            </h1>
+            <span class="hidden sm:inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-widest bg-amber-500/15 text-amber-300 border border-amber-500/30">
+              Enterprise ERP
+            </span>
+          </div>
+          <p class="text-[11px] sm:text-xs text-zinc-400 font-medium tracking-wide">
+            POWER YOUR WORK &amp; IDEAS • Barebone, RAM/SSD &amp; Profit Management
+          </p>
+        </div>
+      </div>
+
+      <!-- Top Action Buttons -->
+      <div class="flex items-center gap-2.5 flex-wrap">
+        <button onclick="openLaptopModal()" class="gold-btn text-xs font-extrabold px-4 py-2.5 rounded-xl shadow-lg shadow-amber-950/50 transition cursor-pointer">
+          + New Laptop
+        </button>
+        <button onclick="openCompModal()" class="bg-zinc-900 hover:bg-zinc-800 text-amber-300 border border-amber-500/30 text-xs font-semibold px-3.5 py-2.5 rounded-xl transition cursor-pointer">
+          + Buy RAM / SSD
+        </button>
+        <button onclick="exportExcelWorkbook()" class="bg-zinc-800 hover:bg-zinc-700 text-zinc-100 border border-zinc-600 text-xs font-semibold px-4 py-2.5 rounded-xl shadow-lg transition cursor-pointer">
+          ⬇ Export Excel Workbook (.xls)
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs (5 Core Business Sheets) -->
+    <div class="max-w-7xl mx-auto mt-3.5 pt-2.5 border-t border-zinc-800/90 flex items-center gap-2 overflow-x-auto no-scrollbar text-xs">
+      <button onclick="switchSheet('dashboard')" id="btn-dashboard" class="px-4 py-2 rounded-lg font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 whitespace-nowrap cursor-pointer">
+        1. Business Dashboard
+      </button>
+      <button onclick="switchSheet('inventory')" id="btn-inventory" class="px-4 py-2 rounded-lg font-medium text-zinc-400 hover:text-white whitespace-nowrap cursor-pointer">
+        2. Laptop Inventory
+      </button>
+      <button onclick="switchSheet('components')" id="btn-components" class="px-4 py-2 rounded-lg font-medium text-zinc-400 hover:text-white whitespace-nowrap cursor-pointer">
+        3. RAM &amp; SSD Stock
+      </button>
+      <button onclick="switchSheet('allocation')" id="btn-allocation" class="px-4 py-2 rounded-lg font-medium text-zinc-400 hover:text-white whitespace-nowrap cursor-pointer">
+        4. Component Allocation
+      </button>
+      <button onclick="switchSheet('ledger')" id="btn-ledger" class="px-4 py-2 rounded-lg font-medium text-zinc-400 hover:text-white whitespace-nowrap cursor-pointer">
+        5. Ledger &amp; Expenses
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- MAIN WORKBOOK CONTENT                      -->
+  <!-- ========================================== -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 space-y-6">
+
+    <!-- 4 Top KPI Summary Cards (Always Visible) -->
+    <div id="kpi-cards" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4"></div>
+
+    <!-- ========================================== -->
+    <!-- SHEET 1: BUSINESS DASHBOARD                -->
+    <!-- ========================================== -->
+    <section id="sheet-dashboard" class="space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Available Laptops in Stock -->
+        <div class="lg:col-span-2 card-luxury rounded-2xl p-4 sm:p-5">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-sm font-bold text-amber-400 uppercase tracking-wider">
+              Available Laptops in Stock
+            </h2>
+            <button onclick="switchSheet('inventory')" class="text-xs text-zinc-400 hover:text-amber-300 underline cursor-pointer">
+              Open Full Inventory →
+            </button>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs border-collapse" id="dashboard-avail-table"></table>
+          </div>
+        </div>
+
+        <!-- Uninstalled RAM / SSD Stock -->
+        <div class="card-luxury rounded-2xl p-4 sm:p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <h2 class="text-sm font-bold text-zinc-200 uppercase tracking-wider">
+              Uninstalled RAM &amp; SSD Stock
+            </h2>
+            <button onclick="switchSheet('allocation')" class="text-xs text-amber-400 hover:underline cursor-pointer">
+              Install in Barebone →
+            </button>
+          </div>
+          <div id="dashboard-comp-list" class="space-y-2.5"></div>
+        </div>
+      </div>
+
+      <!-- Quick Inventory Reset / Preset Toolbar -->
+      <div class="card-luxury rounded-2xl p-4 sm:p-5 flex flex-wrap items-center justify-between gap-4">
+        <div class="space-y-1">
+          <h3 class="text-sm font-bold text-white">
+            Inventory Data Controls
+          </h3>
+          <p class="text-xs text-zinc-400">
+            Manage your pre-loaded diary records or reset the system to start a fresh accounting cycle.
+          </p>
+        </div>
+        <div class="flex items-center gap-2.5">
+          <button onclick="restoreDiaryDefaults()" class="px-3.5 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-xs font-semibold text-zinc-200 border border-zinc-700 cursor-pointer">
+            Restore 13 Diary Entries
+          </button>
+          <button onclick="clearToBlankWorkbook()" class="px-3.5 py-2 rounded-xl bg-rose-950/60 hover:bg-rose-900/70 text-xs font-semibold text-rose-300 border border-rose-800/50 cursor-pointer">
+            Start Blank Workbook
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SHEET 2: LAPTOP INVENTORY                  -->
+    <!-- ========================================== -->
+    <section id="sheet-inventory" class="hidden space-y-4">
+      <div class="card-luxury rounded-2xl p-4 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap items-center gap-2.5 flex-1">
+          <input
+            id="inv-search"
+            oninput="renderAll()"
+            type="text"
+            placeholder="Search Stock ID (L096), Model (840 G8), Processor, or Diary #..."
+            class="bg-zinc-950 border border-zinc-800 rounded-xl px-3.5 py-2 text-xs text-white w-full sm:w-80 focus:outline-none focus:border-amber-500"
+          />
+          <select
+            id="inv-status-filter"
+            onchange="renderAll()"
+            class="bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-xs text-zinc-200 focus:outline-none focus:border-amber-500"
+          >
+            <option value="All">All Statuses</option>
+            <option value="Available">Available Only</option>
+            <option value="Sold">Sold Only</option>
+          </select>
+        </div>
+        <button onclick="openLaptopModal()" class="gold-btn text-xs font-extrabold px-4 py-2 rounded-xl cursor-pointer">
+          + Add Laptop Record
+        </button>
+      </div>
+
+      <div class="card-luxury rounded-2xl overflow-hidden shadow-xl">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse" id="full-inventory-table"></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SHEET 3: RAM & SSD COMPONENT STOCK         -->
+    <!-- ========================================== -->
+    <section id="sheet-components" class="hidden space-y-4">
+      <div class="card-luxury rounded-2xl p-4 flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h2 class="text-sm font-bold text-amber-400 uppercase tracking-wider">Sheet 3 — RAM, SSD &amp; Charger Stock</h2>
+          <p class="text-xs text-zinc-400">
+            Record bulk or single component purchases here. When installed into a barebone laptop in Sheet 4, remaining quantity updates automatically.
+          </p>
+        </div>
+        <button onclick="openCompModal()" class="gold-btn text-xs font-extrabold px-4 py-2 rounded-xl cursor-pointer">
+          + Buy RAM / SSD / Charger
+        </button>
+      </div>
+
+      <div class="card-luxury rounded-2xl overflow-hidden shadow-xl">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse" id="full-comp-table"></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SHEET 4: COMPONENT ALLOCATION              -->
+    <!-- ========================================== -->
+    <section id="sheet-allocation" class="hidden grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="card-luxury rounded-2xl p-5 space-y-4 h-fit">
+        <h3 class="text-sm font-bold text-amber-400 uppercase tracking-wider">
+          Install Component into Barebone Laptop
+        </h3>
+        <p class="text-xs text-zinc-400">
+          Select a Laptop Stock ID and a RAM/SSD from your stock. Its cost is automatically merged into that laptop&apos;s Total Investment without double-counting.
+        </p>
+        <form onsubmit="handleAllocateSubmit(event)" class="space-y-3 text-xs">
+          <div>
+            <label class="block text-zinc-300 mb-1 font-medium">1. Select Target Laptop (Stock ID)</label>
+            <select id="alloc-laptop-select" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2.5 text-white"></select>
+          </div>
+          <div>
+            <label class="block text-zinc-300 mb-1 font-medium">2. Select RAM / SSD / Charger from Stock</label>
+            <select id="alloc-comp-select" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2.5 text-white"></select>
+          </div>
+          <div>
+            <label class="block text-zinc-300 mb-1 font-medium">3. Quantity to Install</label>
+            <input id="alloc-qty" type="number" min="1" max="4" value="1" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white font-mono" />
+          </div>
+          <button type="submit" class="w-full gold-btn font-extrabold py-2.5 rounded-xl cursor-pointer">
+            Install &amp; Merge Cost into Laptop
+          </button>
+        </form>
+      </div>
+
+      <div class="lg:col-span-2 card-luxury rounded-2xl p-5 space-y-3">
+        <h3 class="text-sm font-bold text-white uppercase tracking-wider">Installed Components Log</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse" id="alloc-log-table"></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SHEET 5: LEDGER & OTHER EXPENSES           -->
+    <!-- ========================================== -->
+    <section id="sheet-ledger" class="hidden grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="card-luxury rounded-2xl p-5 space-y-3 h-fit">
+        <h3 class="text-sm font-bold text-amber-400 uppercase tracking-wider">
+          Record Petrol / Repair / Other Expense
+        </h3>
+        <form onsubmit="handleExpenseSubmit(event)" class="space-y-3 text-xs">
+          <input
+            id="exp-desc"
+            required
+            placeholder="Description (e.g. Petrol or Keyboard repair)"
+            class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white"
+          />
+          <input
+            id="exp-amount"
+            type="number"
+            required
+            placeholder="Amount in Rs. (e.g. 500)"
+            class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white font-mono"
+          />
+          <select id="exp-laptop-link" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white"></select>
+          <button type="submit" class="w-full gold-btn font-extrabold py-2.5 rounded-xl cursor-pointer">
+            + Save Expense
+          </button>
+        </form>
+      </div>
+
+      <div class="lg:col-span-2 card-luxury rounded-2xl p-5 space-y-3">
+        <h3 class="text-sm font-bold text-white uppercase tracking-wider">Chronological Purchase &amp; Sales Ledger</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse" id="ledger-table"></table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- FOOTER                                     -->
+  <!-- ========================================== -->
+  <footer class="border-t border-zinc-900 py-4 px-4 lg:px-8 text-center text-xs text-zinc-500">
+    <span class="font-semibold text-amber-400/90">ES LAPTOPS</span> — Power Your Work &amp; Ideas • Professional Inventory &amp; Accounting System
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- MODAL 1: ADD NEW LAPTOP                    -->
+  <!-- ========================================== -->
+  <div id="modal-laptop" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-zinc-900 border border-amber-500/30 rounded-2xl max-w-lg w-full p-5 space-y-4 text-xs max-h-[90vh] overflow-y-auto shadow-2xl">
+      <div class="flex items-center justify-between border-b border-zinc-800 pb-3">
+        <h3 class="text-sm font-bold text-amber-400 uppercase tracking-wider">Add Laptop to Inventory</h3>
+        <button onclick="closeLaptopModal()" class="text-zinc-400 hover:text-white text-base font-bold cursor-pointer">✕</button>
+      </div>
+      <form onsubmit="handleAddLaptopSubmit(event)" class="space-y-3">
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-zinc-400 mb-1">Stock ID (Auto if blank)</label>
+            <input id="f-stockId" placeholder="e.g. L105" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white font-mono" />
+          </div>
+          <div>
+            <label class="block text-zinc-400 mb-1">Diary # (Optional)</label>
+            <input id="f-diaryNo" placeholder="e.g. 105" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white font-mono" />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-zinc-400 mb-1">Laptop Model *</label>
+            <input id="f-model" required placeholder="e.g. HP EliteBook 840 G8" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white" />
+          </div>
+          <div>
+            <label class="block text-zinc-400 mb-1">Processor *</label>
+            <input id="f-proc" required placeholder="e.g. Core i5 11th Gen" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white" />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-zinc-400 mb-1">Laptop Type</label>
+            <select id="f-barebone" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white">
+              <option value="true">Barebone (Without RAM/SSD)</option>
+              <option value="false">Complete Laptop</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-zinc-400 mb-1">Base / Barebone Price (Rs.) *</label>
+            <input id="f-base" type="number" required placeholder="40000" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white font-mono" />
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-2">
+          <div>
+            <label class="block text-amber-300 mb-1">RAM Cost (Rs.)</label>
+            <input id="f-ram" type="number" value="0" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-2.5 py-1.5 text-white font-mono" />
+          </div>
+          <div>
+            <label class="block text-zinc-300 mb-1">SSD Cost (Rs.)</label>
+            <input id="f-ssd" type="number" value="0" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-2.5 py-1.5 text-white font-mono" />
+          </div>
+          <div>
+            <label class="block text-amber-400 mb-1">Charger/Repair</label>
+            <input id="f-chg" type="number" value="0" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-2.5 py-1.5 text-white font-mono" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-zinc-400 mb-1">Notes / Condition</label>
+          <input id="f-notes" placeholder="e.g. Touch ID issue or Barebone in stock" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white" />
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeLaptopModal()" class="px-4 py-2 rounded-xl bg-zinc-800 text-zinc-300 cursor-pointer">Cancel</button>
+          <button type="submit" class="px-5 py-2 rounded-xl gold-btn font-extrabold cursor-pointer">Save Laptop</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL 2: RECORD LAPTOP SALE                -->
+  <!-- ========================================== -->
+  <div id="modal-sell" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-zinc-900 border border-amber-500/30 rounded-2xl max-w-md w-full p-5 space-y-4 text-xs shadow-2xl">
+      <div class="flex items-center justify-between border-b border-zinc-800 pb-3">
+        <h3 id="sell-modal-title" class="text-sm font-bold text-amber-400">Record Laptop Sale</h3>
+        <button onclick="closeSellModal()" class="text-zinc-400 hover:text-white text-base font-bold cursor-pointer">✕</button>
+      </div>
+      <form onsubmit="handleConfirmSale(event)" class="space-y-3">
+        <input type="hidden" id="sell-stockId" />
+        <div id="sell-cost-summary" class="p-3 rounded-xl bg-zinc-950 border border-zinc-800 text-zinc-300"></div>
+        <div>
+          <label class="block text-amber-400 font-semibold mb-1">Selling Price (Rs.) *</label>
+          <input id="sell-price" type="number" required placeholder="Enter sale price in Rs." class="w-full bg-zinc-950 border border-amber-500/50 rounded-xl px-3 py-2.5 text-white font-mono text-sm" />
+        </div>
+        <label class="flex items-center gap-2 text-zinc-300 cursor-pointer">
+          <input id="sell-split" type="checkbox" class="rounded" />
+          <span>50/50 Partner Profit Split</span>
+        </label>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeSellModal()" class="px-4 py-2 rounded-xl bg-zinc-800 text-zinc-300 cursor-pointer">Cancel</button>
+          <button type="submit" class="px-5 py-2 rounded-xl gold-btn font-extrabold cursor-pointer">Confirm Sale</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL 3: ADD RAM / SSD COMPONENT           -->
+  <!-- ========================================== -->
+  <div id="modal-comp" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-zinc-900 border border-amber-500/30 rounded-2xl max-w-md w-full p-5 space-y-4 text-xs shadow-2xl">
+      <div class="flex items-center justify-between border-b border-zinc-800 pb-3">
+        <h3 class="text-sm font-bold text-amber-400">Buy RAM / SSD / Charger for Stock</h3>
+        <button onclick="closeCompModal()" class="text-zinc-400 hover:text-white text-base font-bold cursor-pointer">✕</button>
+      </div>
+      <form onsubmit="handleAddCompSubmit(event)" class="space-y-3">
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-zinc-400 mb-1">Category</label>
+            <select id="c-cat" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white">
+              <option value="RAM">RAM</option>
+              <option value="SSD">SSD</option>
+              <option value="Charger">Charger</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-zinc-400 mb-1">Quantity Bought *</label>
+            <input id="c-qty" type="number" min="1" value="1" required class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white font-mono" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-zinc-400 mb-1">Component Name / Spec *</label>
+          <input id="c-name" required placeholder="e.g. 8GB DDR4 3200MHz or 256GB NVMe" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white" />
+        </div>
+        <div>
+          <label class="block text-zinc-400 mb-1">Unit Cost (Rs. per piece) *</label>
+          <input id="c-cost" type="number" required placeholder="2500" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 text-white font-mono" />
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeCompModal()" class="px-4 py-2 rounded-xl bg-zinc-800 text-zinc-300 cursor-pointer">Cancel</button>
+          <button type="submit" class="px-5 py-2 rounded-xl gold-btn font-extrabold cursor-pointer">Add to Stock</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- APPLICATION JAVASCRIPT & DATABASE ENGINE   -->
+  <!-- ========================================== -->
+  <script>
+    // 1. Pre-loaded Diary Records (13 Laptops from Diary Pages 1 & 2)
+    const INITIAL_LAPTOPS = [
+      {
+        stockId: 'L096',
+        diaryNo: '96',
+        purchaseDate: '2026-02-07',
+        model: 'HP EliteBook 840 G8',
+        processor: 'Core i5 11th Gen',
+        isBarebone: true,
+        basePrice: 40000,
+        manualRamCost: 7300,
+        manualSsdCost: 5500,
+        manualChargerCost: 1000,
+        manualRepairCost: 0,
+        status: 'Sold',
+        sellingPrice: 66000,
+        saleDate: '2026-02-10',
+        partnerSplit: false,
+        customerNotes: 'Diary #96: 40k + 7300 + 5500 + 1000 = 53,800'
+      },
+      {
+        stockId: 'L097',
+        diaryNo: '97',
+        purchaseDate: '2026-02-07',
+        model: 'HP EliteBook 840 G8',
+        processor: 'Core i7 11th Gen',
+        isBarebone: true,
+        basePrice: 50000,
+        manualRamCost: 0,
+        manualSsdCost: 0,
+        manualChargerCost: 0,
+        manualRepairCost: 0,
+        status: 'Available',
+        sellingPrice: 0,
+        saleDate: '',
+        partnerSplit: false,
+        customerNotes: 'Diary #97: Barebone in stock'
+      },
+      {
+        stockId: 'L098',
+        diaryNo: '98',
+        purchaseDate: '2026-02-07',
+        model: 'HP EliteBook 840 G7',
+        processor: 'Core i7 10th Gen',
+        isBarebone: true,
+        basePrice: 45000,
+        manualRamCost: 0,
+        manualSsdCost: 0,
+        manualChargerCost: 0,
+        manualRepairCost: 0,
+        status: 'Available',
+        sellingPrice: 0,
+        saleDate: '',
+        partnerSplit: false,
+        customerNotes: 'Diary #98: Barebone in stock'
+      },
+      {
+        stockId: 'L099',
+        diaryNo: '99',
+        purchaseDate: '2026-02-07',
+        model: 'MacBook Pro 2019 16"',
+        processor: 'Core i7 (16/512)',
+        isBarebone: false,
+        basePrice: 63000,
+        manualRamCost: 0,
+        manualSsdCost: 0,
+        manualChargerCost: 0,
+        manualRepairCost: 0,
+        status: 'Sold',
+        sellingPrice: 78000,
+        saleDate: '2026-02-11',
+        partnerSplit: false,
+        customerNotes: 'Diary #99: Charger + Touch ID issue'
+      },
+      {
+        stockId: 'L100',
+        diaryNo: '100',
+        purchaseDate: '2026-02-08',
+        model: 'HP EliteBook 840 G8',
+        processor: 'Core i5 11th Gen',
+        isBarebone: true,
+        basePrice: 40000,
+        manualRamCost: 7300,
+        manualSsdCost: 7700,
+        manualChargerCost: 1000,
+        manualRepairCost: 7000,
+        status: 'Sold',
+        sellingPrice: 69000,
+        saleDate: '2026-02-12',
+        partnerSplit: false,
+        customerNotes: 'Diary #100: Total 63,000, Sold 69,000'
+      },
+      {
+        stockId: 'L101',
+        diaryNo: '101',
+        purchaseDate: '2026-02-08',
+        model: 'HP EliteBook 840 G7',
+        processor: 'Core i5 10th Gen',
+        isBarebone: true,
+        basePrice: 35000,
+        manualRamCost: 0,
+        manualSsdCost: 0,
+        manualChargerCost: 0,
+        manualRepairCost: 0,
+        status: 'Available',
+        sellingPrice: 0,
+        saleDate: '',
+        partnerSplit: false,
+        customerNotes: 'Diary #101: Barebone in stock'
+      },
+      {
+        stockId: 'L102',
+        diaryNo: '102',
+        purchaseDate: '2026-02-08',
+        model: 'HP ProBook 450 G7',
+        processor: 'Core i5 10th Gen',
+        isBarebone: true,
+        basePrice: 28000,
+        manualRamCost: 0,
+        manualSsdCost: 0,
+        manualChargerCost: 0,
+        manualRepairCost: 0,
+        status: 'Available',
+        sellingPrice: 0,
+        saleDate: '',
+        partnerSplit: false,
+        customerNotes: 'Diary #102: Barebone in stock'
+      },
+      {
+        stockId: 'L103',
+        diaryNo: '103',
+        purchaseDate: '2026-02-08',
+        model: 'HP ProBook 450 G7',
+        processor: 'Core i5 10th Gen',
+        isBarebone: true,
+        basePrice: 35000,
+        manualRamCost: 0,
+        manualSsdCost: 0,
+        manualChargerCost: 0,
+        manualRepairCost: 0,
+        status: 'Available',
+        sellingPrice: 0,
+        saleDate: '',
+        partnerSplit: false,
+        customerNotes: 'Diary #103: Barebone in stock'
+      },
+      {
+        stockId: 'L104',
+        diaryNo: '104',
+        purchaseDate: '2026-02-08',
+        model: 'HP ProBook 430 G6',
+        processor: 'Core i5 8th Gen',
+        isBarebone: true,
+        basePrice: 15000,
+        manualRamCost: 4500,
+        manualSsdCost: 7000,
+        manualChargerCost: 1000,
+        manualRepairCost: 0,
+        status: 'Sold',
+        sellingPrice: 32000,
+        saleDate: '2026-02-14',
+        partnerSplit: false,
+        customerNotes: 'Diary #104: 15k + 1k + 7k + 4.5k = 27,500'
+      },
+      {
+        stockId: 'L001',
+        diaryNo: '1',
+        purchaseDate: '2026-01-17',
+        model: 'HP x360 11E G4',
+        processor: 'Core i5 8th Gen',
+        isBarebone: false,
+        basePrice: 32500,
+        manualRamCost: 0,
+        manualSsdCost: 0,
+        manualChargerCost: 0,
+        manualRepairCost: 0,
+        status: 'Sold',
+        sellingPrice: 35000,
+        saleDate: '2026-01-20',
+        partnerSplit: true,
+        customerNotes: 'Diary Page 2 #1: 1500 + 1000 split'
+      },
+      {
+        stockId: 'L002',
+        diaryNo: '2',
+        purchaseDate: '2026-01-17',
+        model: 'MacBook Air 2015',
+        processor: 'Core i7 (8/500)',
+        isBarebone: false,
+        basePrice: 27000,
+        manualRamCost: 0,
+        manualSsdCost: 0,
+        manualChargerCost: 0,
+        manualRepairCost: 0,
+        status: 'Sold',
+        sellingPrice: 39000,
+        saleDate: '2026-01-22',
+        partnerSplit: true,
+        customerNotes: 'Diary Page 2 #2: 6000 + 6000 split'
+      },
+      {
+        stockId: 'L003',
+        diaryNo: '3',
+        purchaseDate: '2026-01-17',
+        model: 'MacBook Air 2017',
+        processor: 'Core i5 (8/128)',
+        isBarebone: true,
+        basePrice: 23000,
+        manualRamCost: 0,
+        manualSsdCost: 7000,
+        manualChargerCost: 2000,
+        manualRepairCost: 5000,
+        status: 'Available',
+        sellingPrice: 0,
+        saleDate: '',
+        partnerSplit: false,
+        customerNotes: 'Diary Page 2 #3: True cost 37,000 (Diary wrote 38,000)'
+      },
+      {
+        stockId: 'L004',
+        diaryNo: '4',
+        purchaseDate: '2026-01-17',
+        model: 'MacBook Air 2014 11.6"',
+        processor: 'Core i5 (4/128)',
+        isBarebone: false,
+        basePrice: 20000,
+        manualRamCost: 0,
+        manualSsdCost: 0,
+        manualChargerCost: 0,
+        manualRepairCost: 0,
+        status: 'Sold',
+        sellingPrice: 27000,
+        saleDate: '2026-01-25',
+        partnerSplit: true,
+        customerNotes: 'Diary Page 2 #4 (Pappa): 3500 + 3500 split'
+      }
+    ];
+
+    // 2. Pre-loaded RAM, SSD & Charger Stock
+    const INITIAL_COMPONENTS = [
+      {
+        compId: 'C001',
+        purchaseDate: '2026-02-07',
+        category: 'RAM',
+        name: '16GB DDR5 RAM (5600 MT/s)',
+        qtyPurchased: 1,
+        unitCost: 15000,
+        qtySoldLoose: 1,
+        looseSalePrice: 19500
+      },
+      {
+        compId: 'C002',
+        purchaseDate: '2026-02-09',
+        category: 'RAM',
+        name: '8GB DDR4 RAM 3200MHz',
+        qtyPurchased: 5,
+        unitCost: 2500,
+        qtySoldLoose: 0,
+        looseSalePrice: 0
+      },
+      {
+        compId: 'C003',
+        purchaseDate: '2026-02-09',
+        category: 'RAM',
+        name: '16GB DDR4 RAM 3200MHz',
+        qtyPurchased: 2,
+        unitCost: 4500,
+        qtySoldLoose: 0,
+        looseSalePrice: 0
+      },
+      {
+        compId: 'C004',
+        purchaseDate: '2026-02-09',
+        category: 'SSD',
+        name: '256GB NVMe SSD',
+        qtyPurchased: 4,
+        unitCost: 2800,
+        qtySoldLoose: 0,
+        looseSalePrice: 0
+      },
+      {
+        compId: 'C005',
+        purchaseDate: '2026-02-09',
+        category: 'SSD',
+        name: '512GB NVMe SSD',
+        qtyPurchased: 3,
+        unitCost: 4500,
+        qtySoldLoose: 0,
+        looseSalePrice: 0
+      },
+      {
+        compId: 'C006',
+        purchaseDate: '2026-02-09',
+        category: 'Charger',
+        name: 'HP 65W Original Charger',
+        qtyPurchased: 4,
+        unitCost: 1000,
+        qtySoldLoose: 0,
+        looseSalePrice: 0
+      }
+    ];
+
+    const INITIAL_EXPENSES = [
+      {
+        expId: 'E001',
+        date: '2026-01-17',
+        description: 'Petrol expense noted on Diary Page 2 ((Ptl) -500)',
+        amount: 500,
+        linkedStockId: ''
+      }
+    ];
+
+    let appData = {
+      laptops: INITIAL_LAPTOPS,
+      components: INITIAL_COMPONENTS,
+      allocations: [],
+      expenses: INITIAL_EXPENSES
+    };
+
+    // Load saved data from browser localStorage
+    try {
+      const saved = localStorage.getItem('es_laptops_standalone_v2');
+      if (saved) {
+        appData = JSON.parse(saved);
+      }
+    } catch (e) {}
+
+    function saveData() {
+      try {
+        localStorage.setItem('es_laptops_standalone_v2', JSON.stringify(appData));
+      } catch (e) {}
+      renderAll();
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      document.getElementById('toast-text').textContent = msg;
+      t.classList.remove('hidden');
+      setTimeout(() => t.classList.add('hidden'), 3200);
+    }
+
+    function formatRs(n) {
+      return 'Rs. ' + Math.round(Number(n || 0)).toLocaleString('en-PK');
+    }
+
+    function switchSheet(sheetId) {
+      ['dashboard', 'inventory', 'components', 'allocation', 'ledger'].forEach(id => {
+        const sec = document.getElementById('sheet-' + id);
+        if (sec) sec.classList.toggle('hidden', id !== sheetId);
+        const btn = document.getElementById('btn-' + id);
+        if (btn) {
+          btn.className = id === sheetId
+            ? 'px-4 py-2 rounded-lg font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 whitespace-nowrap cursor-pointer'
+            : 'px-4 py-2 rounded-lg font-medium text-zinc-400 hover:text-white whitespace-nowrap cursor-pointer';
+        }
+      });
+    }
+
+    // Automatic Relational Calculation Engine
+    function computeData() {
+      const enrichedComps = appData.components.map(c => {
+        const allocs = appData.allocations.filter(a => a.compId === c.compId);
+        const qtyInstalled = allocs.reduce((s, a) => s + Number(a.quantity || 1), 0);
+        const installedIds = allocs.map(a => a.stockId + ' (x' + a.quantity + ')').join(', ') || '—';
+        const remQty = Math.max(0, Number(c.qtyPurchased) - qtyInstalled - Number(c.qtySoldLoose || 0));
+        const remValue = remQty * Number(c.unitCost);
+        const looseProfit = Number(c.qtySoldLoose || 0) > 0
+          ? Number(c.looseSalePrice) - (Number(c.qtySoldLoose) * Number(c.unitCost))
+          : 0;
+        return { ...c, qtyInstalled, installedIds, remQty, remValue, looseProfit };
+      });
+
+      const enrichedLaptops = appData.laptops.map(l => {
+        const allocs = appData.allocations.filter(a => a.stockId === l.stockId);
+        let aRam = 0, aSsd = 0, aChg = 0;
+        allocs.forEach(a => {
+          const comp = appData.components.find(c => c.compId === a.compId);
+          if (comp) {
+            const cost = Number(comp.unitCost) * Number(a.quantity || 1);
+            if (comp.category === 'RAM') aRam += cost;
+            else if (comp.category === 'SSD') aSsd += cost;
+            else aChg += cost;
+          }
+        });
+        const linkedExp = appData.expenses
+          .filter(e => e.linkedStockId === l.stockId)
+          .reduce((s, e) => s + Number(e.amount || 0), 0);
+        const ramCost = Number(l.manualRamCost || 0) + aRam;
+        const ssdCost = Number(l.manualSsdCost || 0) + aSsd;
+        const chgCost = Number(l.manualChargerCost || 0) + Number(l.manualRepairCost || 0) + aChg + linkedExp;
+        const totalInvestment = Number(l.basePrice || 0) + ramCost + ssdCost + chgCost;
+        const netProfit = l.status === 'Sold' ? Number(l.sellingPrice || 0) - totalInvestment : 0;
+        return { ...l, ramCost, ssdCost, chgCost, totalInvestment, netProfit };
+      });
+
+      return { enrichedLaptops, enrichedComps };
+    }
+
+    function renderAll() {
+      const { enrichedLaptops, enrichedComps } = computeData();
+      const availLaptops = enrichedLaptops.filter(l => l.status === 'Available');
+      const soldLaptops = enrichedLaptops.filter(l => l.status === 'Sold');
+
+      const availLaptopVal = availLaptops.reduce((s, l) => s + l.totalInvestment, 0);
+      const spareCompVal = enrichedComps.reduce((s, c) => s + c.remValue, 0);
+      const totalStockVal = availLaptopVal + spareCompVal;
+
+      const totalSales = soldLaptops.reduce((s, l) => s + Number(l.sellingPrice || 0), 0) +
+        enrichedComps.reduce((s, c) => s + Number(c.looseSalePrice || 0), 0);
+      const generalExp = appData.expenses
+        .filter(e => !e.linkedStockId)
+        .reduce((s, e) => s + Number(e.amount || 0), 0);
+      const netProfit = soldLaptops.reduce((s, l) => s + l.netProfit, 0) +
+        enrichedComps.reduce((s, c) => s + c.looseProfit, 0) - generalExp;
+      const spareCount = enrichedComps.reduce((s, c) => s + c.remQty, 0);
+
+      // Render KPI Summary Row (Gold & Silver Luxury Theme)
+      document.getElementById('kpi-cards').innerHTML = `
+        <div class="card-luxury rounded-2xl p-4">
+          <div class="text-[11px] text-zinc-400 font-bold tracking-wider uppercase">ACTIVE STOCK VALUE</div>
+          <div class="text-lg sm:text-2xl font-extrabold text-white font-mono mt-1">${formatRs(totalStockVal)}</div>
+          <div class="text-[11px] text-zinc-400 mt-1">Laptops: ${formatRs(availLaptopVal)} | Parts: ${formatRs(spareCompVal)}</div>
+        </div>
+        <div class="card-luxury rounded-2xl p-4">
+          <div class="text-[11px] text-zinc-400 font-bold tracking-wider uppercase">TOTAL SALES REVENUE</div>
+          <div class="text-lg sm:text-2xl font-extrabold text-zinc-100 font-mono mt-1">${formatRs(totalSales)}</div>
+          <div class="text-[11px] text-zinc-400 mt-1">${soldLaptops.length} Laptops Sold</div>
+        </div>
+        <div class="card-luxury rounded-2xl p-4 border-amber-500/40">
+          <div class="text-[11px] text-amber-400 font-bold tracking-wider uppercase">NET BUSINESS PROFIT</div>
+          <div class="text-lg sm:text-2xl font-extrabold text-amber-400 font-mono mt-1">${formatRs(netProfit)}</div>
+          <div class="text-[11px] text-zinc-400 mt-1">After Rs. ${generalExp} General Expenses</div>
+        </div>
+        <div class="card-luxury rounded-2xl p-4">
+          <div class="text-[11px] text-amber-300 font-bold tracking-wider uppercase">AVAILABLE IN STOCK</div>
+          <div class="text-lg sm:text-2xl font-extrabold text-white mt-1">${availLaptops.length} Laptops</div>
+          <div class="text-[11px] text-zinc-300 mt-1">+ ${spareCount} Uninstalled RAM/SSD Parts</div>
+        </div>
+      `;
+
+      // Render Dashboard Available Table
+      document.getElementById('dashboard-avail-table').innerHTML = `
+        <thead>
+          <tr class="border-b border-zinc-800 text-zinc-400">
+            <th class="py-2 pr-2">Stock ID</th>
+            <th class="py-2 px-2">Model</th>
+            <th class="py-2 px-2 text-right">Base</th>
+            <th class="py-2 px-2 text-right">Parts Added</th>
+            <th class="py-2 px-2 text-right">Total Cost</th>
+            <th class="py-2 pl-2 text-right">Action</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-zinc-800/60">
+          ${availLaptops.map(l => `
+            <tr class="hover:bg-zinc-800/30">
+              <td class="py-2.5 pr-2 font-mono font-bold text-amber-400">${l.stockId}</td>
+              <td class="py-2.5 px-2 text-white font-medium">${l.model} <span class="text-zinc-400">(${l.processor})</span></td>
+              <td class="py-2.5 px-2 text-right font-mono text-zinc-300">${formatRs(l.basePrice)}</td>
+              <td class="py-2.5 px-2 text-right font-mono text-amber-300">${formatRs(l.ramCost + l.ssdCost + l.chgCost)}</td>
+              <td class="py-2.5 px-2 text-right font-mono font-bold text-white">${formatRs(l.totalInvestment)}</td>
+              <td class="py-2.5 pl-2 text-right">
+                <button onclick="openSellModal('${l.stockId}')" class="gold-btn px-2.5 py-1 rounded-lg text-[11px] font-bold cursor-pointer">Sell</button>
+              </td>
+            </tr>
+          `).join('')}
+        </tbody>
+      `;
+
+      // Render Dashboard Spare Components
+      document.getElementById('dashboard-comp-list').innerHTML = enrichedComps.filter(c => c.remQty > 0).map(c => `
+        <div class="p-3 rounded-xl bg-zinc-950/90 border border-zinc-800 flex items-center justify-between text-xs">
+          <div>
+            <div class="font-semibold text-white">${c.name}</div>
+            <div class="text-zinc-400">Unit: ${formatRs(c.unitCost)}</div>
+          </div>
+          <div class="text-right">
+            <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono font-bold">${c.remQty} left</span>
+            <div class="text-[11px] text-zinc-400 font-mono mt-0.5">${formatRs(c.remValue)}</div>
+          </div>
+        </div>
+      `).join('');
+
+      // Render Sheet 2: Full Inventory Table
+      const q = (document.getElementById('inv-search')?.value || '').toLowerCase();
+      const stFilter = document.getElementById('inv-status-filter')?.value || 'All';
+      const filteredLaps = enrichedLaptops.filter(l => {
+        const matchQ = l.stockId.toLowerCase().includes(q) ||
+          l.model.toLowerCase().includes(q) ||
+          l.processor.toLowerCase().includes(q) ||
+          (l.customerNotes || '').toLowerCase().includes(q);
+        const matchSt = stFilter === 'All' || l.status === stFilter;
+        return matchQ && matchSt;
+      });
+
+      document.getElementById('full-inventory-table').innerHTML = `
+        <thead>
+          <tr class="bg-zinc-950 border-b border-zinc-800 text-zinc-400 uppercase text-[11px]">
+            <th class="py-3 px-3">Stock ID</th>
+            <th class="py-3 px-3">Model &amp; Processor</th>
+            <th class="py-3 px-3">Status</th>
+            <th class="py-3 px-3 text-right">Base Price</th>
+            <th class="py-3 px-3 text-right text-amber-300">RAM</th>
+            <th class="py-3 px-3 text-right text-zinc-300">SSD</th>
+            <th class="py-3 px-3 text-right text-amber-400">Chg/Repair</th>
+            <th class="py-3 px-3 text-right text-white font-bold">Total Cost</th>
+            <th class="py-3 px-3 text-right">Sell Price</th>
+            <th class="py-3 px-3 text-right">Profit</th>
+            <th class="py-3 px-3 text-right">Action</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-zinc-800/70">
+          ${filteredLaps.map(l => `
+            <tr class="hover:bg-zinc-800/40">
+              <td class="py-3 px-3 font-mono font-bold text-amber-400">${l.stockId}</td>
+              <td class="py-3 px-3">
+                <div class="font-semibold text-white">${l.model}</div>
+                <div class="text-zinc-400 text-[11px]">${l.processor} ${l.isBarebone ? '• <span class="text-amber-300">Barebone</span>' : ''}</div>
+              </td>
+              <td class="py-3 px-3">${l.status === 'Sold' ? '<span class="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 font-semibold">Sold</span>' : '<span class="px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-200 border border-zinc-700 font-semibold">Available</span>'}</td>
+              <td class="py-3 px-3 text-right font-mono text-zinc-200">${formatRs(l.basePrice)}</td>
+              <td class="py-3 px-3 text-right font-mono text-amber-300">${l.ramCost > 0 ? formatRs(l.ramCost) : '—'}</td>
+              <td class="py-3 px-3 text-right font-mono text-zinc-300">${l.ssdCost > 0 ? formatRs(l.ssdCost) : '—'}</td>
+              <td class="py-3 px-3 text-right font-mono text-amber-400">${l.chgCost > 0 ? formatRs(l.chgCost) : '—'}</td>
+              <td class="py-3 px-3 text-right font-mono font-bold text-white bg-zinc-950/60">${formatRs(l.totalInvestment)}</td>
+              <td class="py-3 px-3 text-right font-mono text-zinc-100">${l.status === 'Sold' ? formatRs(l.sellingPrice) : '—'}</td>
+              <td class="py-3 px-3 text-right font-mono font-bold ${l.netProfit >= 0 ? 'text-amber-400' : 'text-rose-400'}">${l.status === 'Sold' ? formatRs(l.netProfit) : 'In Stock'}</td>
+              <td class="py-3 px-3 text-right space-x-1">
+                ${l.status === 'Available' ? `<button onclick="openSellModal('${l.stockId}')" class="gold-btn px-2.5 py-1 rounded-lg font-bold cursor-pointer">Sell</button>` : ''}
+                <button onclick="deleteLaptop('${l.stockId}')" class="text-zinc-500 hover:text-rose-400 px-1.5 py-1 cursor-pointer" title="Delete">✕</button>
+              </td>
+            </tr>
+          `).join('')}
+        </tbody>
+      `;
+
+      // Render Sheet 3: Component Table
+      document.getElementById('full-comp-table').innerHTML = `
+        <thead>
+          <tr class="bg-zinc-950 border-b border-zinc-800 text-zinc-400 uppercase text-[11px]">
+            <th class="py-3 px-3">Comp ID</th>
+            <th class="py-3 px-3">Category</th>
+            <th class="py-3 px-3">Component Spec</th>
+            <th class="py-3 px-3 text-right">Qty Bought</th>
+            <th class="py-3 px-3 text-right">Unit Cost</th>
+            <th class="py-3 px-3 text-right text-amber-400">Installed</th>
+            <th class="py-3 px-3">Installed In Laptop ID</th>
+            <th class="py-3 px-3 text-right font-bold text-white">Remaining Qty</th>
+            <th class="py-3 px-3 text-right">Remaining Value</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-zinc-800/70">
+          ${enrichedComps.map(c => `
+            <tr class="hover:bg-zinc-800/30">
+              <td class="py-3 px-3 font-mono font-bold text-amber-400">${c.compId}</td>
+              <td class="py-3 px-3 text-zinc-300">${c.category}</td>
+              <td class="py-3 px-3 font-semibold text-white">${c.name}</td>
+              <td class="py-3 px-3 text-right font-mono">${c.qtyPurchased}</td>
+              <td class="py-3 px-3 text-right font-mono">${formatRs(c.unitCost)}</td>
+              <td class="py-3 px-3 text-right font-mono text-amber-400 font-bold">${c.qtyInstalled}</td>
+              <td class="py-3 px-3 font-mono text-amber-300">${c.installedIds}</td>
+              <td class="py-3 px-3 text-right font-mono font-bold text-white">${c.remQty}</td>
+              <td class="py-3 px-3 text-right font-mono text-zinc-200">${formatRs(c.remValue)}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      `;
+
+      // Render Sheet 4 Selects & Allocation Log
+      document.getElementById('alloc-laptop-select').innerHTML = enrichedLaptops
+        .map(l => `<option value="${l.stockId}">${l.stockId} — ${l.model} (${l.processor}) [${l.status}]</option>`)
+        .join('');
+      document.getElementById('alloc-comp-select').innerHTML = enrichedComps
+        .filter(c => c.remQty > 0)
+        .map(c => `<option value="${c.compId}">${c.compId} — ${c.name} (${formatRs(c.unitCost)}) [${c.remQty} left]</option>`)
+        .join('');
+
+      document.getElementById('alloc-log-table').innerHTML = appData.allocations.length === 0
+        ? `<tr><td class="py-6 text-center text-zinc-400">No components linked yet. Select a Laptop ID and RAM/SSD on the left to install.</td></tr>`
+        : `<thead><tr class="border-b border-zinc-800 text-zinc-400"><th class="py-2">Laptop ID</th><th>Part Installed</th><th>Qty</th><th>Cost Added</th><th class="text-right">Action</th></tr></thead>
+           <tbody class="divide-y divide-zinc-800">${appData.allocations.map(a => {
+             const comp = appData.components.find(c => c.compId === a.compId);
+             return `<tr>
+               <td class="py-2 font-mono text-amber-400 font-bold">${a.stockId}</td>
+               <td class="py-2 text-white">${comp ? comp.name : a.compId}</td>
+               <td class="py-2 font-mono">${a.quantity}</td>
+               <td class="py-2 font-mono text-amber-300">+${formatRs((comp ? comp.unitCost : 0) * a.quantity)}</td>
+               <td class="py-2 text-right"><button onclick="removeAllocation('${a.allocId}')" class="text-rose-400 hover:underline cursor-pointer">Unlink</button></td>
+             </tr>`;
+           }).join('')}</tbody>`;
+
+      // Render Sheet 5 Expense Select & Chronological Ledger
+      document.getElementById('exp-laptop-link').innerHTML =
+        `<option value="">General Shop Expense (Petrol / Misc)</option>` +
+        enrichedLaptops.map(l => `<option value="${l.stockId}">Link to ${l.stockId} — ${l.model}</option>`).join('');
+
+      document.getElementById('ledger-table').innerHTML = `
+        <thead>
+          <tr class="border-b border-zinc-800 text-zinc-400">
+            <th class="py-2">Date</th>
+            <th>ID</th>
+            <th>Item</th>
+            <th class="text-right">Purchase Cost</th>
+            <th class="text-right">Sale Price</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-zinc-800/60">
+          ${enrichedLaptops.map(l => `
+            <tr>
+              <td class="py-2 text-zinc-400">${l.purchaseDate}</td>
+              <td class="py-2 font-mono text-amber-400 font-bold">${l.stockId}</td>
+              <td class="py-2 text-white">${l.model} (${l.processor})</td>
+              <td class="py-2 text-right font-mono text-zinc-300">${formatRs(l.totalInvestment)}</td>
+              <td class="py-2 text-right font-mono text-amber-400 font-bold">${l.status === 'Sold' ? formatRs(l.sellingPrice) : '—'}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      `;
+    }
+
+    // Modal & Form Handlers
+    function openLaptopModal() {
+      document.getElementById('modal-laptop').classList.remove('hidden');
+    }
+
+    function closeLaptopModal() {
+      document.getElementById('modal-laptop').classList.add('hidden');
+    }
+
+    function handleAddLaptopSubmit(e) {
+      e.preventDefault();
+      const stockId = document.getElementById('f-stockId').value.trim() || ('L' + (appData.laptops.length + 105));
+      appData.laptops.unshift({
+        stockId,
+        diaryNo: document.getElementById('f-diaryNo').value.trim(),
+        purchaseDate: new Date().toISOString().split('T')[0],
+        model: document.getElementById('f-model').value.trim(),
+        processor: document.getElementById('f-proc').value.trim(),
+        isBarebone: document.getElementById('f-barebone').value === 'true',
+        basePrice: Number(document.getElementById('f-base').value || 0),
+        manualRamCost: Number(document.getElementById('f-ram').value || 0),
+        manualSsdCost: Number(document.getElementById('f-ssd').value || 0),
+        manualChargerCost: Number(document.getElementById('f-chg').value || 0),
+        manualRepairCost: 0,
+        status: 'Available',
+        sellingPrice: 0,
+        saleDate: '',
+        partnerSplit: false,
+        customerNotes: document.getElementById('f-notes').value.trim()
+      });
+      e.target.reset();
+      closeLaptopModal();
+      saveData();
+      showToast('Added Laptop ' + stockId + ' to Inventory!');
+    }
+
+    function deleteLaptop(stockId) {
+      appData.laptops = appData.laptops.filter(l => l.stockId !== stockId);
+      appData.allocations = appData.allocations.filter(a => a.stockId !== stockId);
+      saveData();
+      showToast('Removed ' + stockId + ' from Inventory.');
+    }
+
+    function openSellModal(stockId) {
+      const { enrichedLaptops } = computeData();
+      const lap = enrichedLaptops.find(l => l.stockId === stockId);
+      if (!lap) return;
+      document.getElementById('sell-stockId').value = stockId;
+      document.getElementById('sell-modal-title').textContent = 'Record Sale — ' + lap.stockId + ' (' + lap.model + ')';
+      document.getElementById('sell-cost-summary').innerHTML = `Total Landed Investment: <strong class="text-amber-300 font-mono">${formatRs(lap.totalInvestment)}</strong>`;
+      document.getElementById('sell-price').value = '';
+      document.getElementById('modal-sell').classList.remove('hidden');
+    }
+
+    function closeSellModal() {
+      document.getElementById('modal-sell').classList.add('hidden');
+    }
+
+    function handleConfirmSale(e) {
+      e.preventDefault();
+      const stockId = document.getElementById('sell-stockId').value;
+      const price = Number(document.getElementById('sell-price').value || 0);
+      const split = document.getElementById('sell-split').checked;
+      appData.laptops = appData.laptops.map(l => l.stockId === stockId ? {
+        ...l,
+        status: 'Sold',
+        sellingPrice: price,
+        partnerSplit: split,
+        saleDate: new Date().toISOString().split('T')[0]
+      } : l);
+      closeSellModal();
+      saveData();
+      showToast('Marked ' + stockId + ' as Sold for ' + formatRs(price) + '!');
+    }
+
+    function openCompModal() {
+      document.getElementById('modal-comp').classList.remove('hidden');
+    }
+
+    function closeCompModal() {
+      document.getElementById('modal-comp').classList.add('hidden');
+    }
+
+    function handleAddCompSubmit(e) {
+      e.preventDefault();
+      const compId = 'C00' + (appData.components.length + 1);
+      appData.components.unshift({
+        compId,
+        purchaseDate: new Date().toISOString().split('T')[0],
+        category: document.getElementById('c-cat').value,
+        name: document.getElementById('c-name').value.trim(),
+        qtyPurchased: Number(document.getElementById('c-qty').value || 1),
+        unitCost: Number(document.getElementById('c-cost').value || 0),
+        qtySoldLoose: 0,
+        looseSalePrice: 0
+      });
+      e.target.reset();
+      closeCompModal();
+      saveData();
+      showToast('Added Component ' + compId + ' to Stock!');
+    }
+
+    function handleAllocateSubmit(e) {
+      e.preventDefault();
+      const stockId = document.getElementById('alloc-laptop-select').value;
+      const compId = document.getElementById('alloc-comp-select').value;
+      const quantity = Number(document.getElementById('alloc-qty').value || 1);
+      if (!stockId || !compId) return;
+      appData.allocations.unshift({
+        allocId: 'A-' + Date.now(),
+        stockId,
+        compId,
+        quantity,
+        date: new Date().toISOString().split('T')[0]
+      });
+      saveData();
+      showToast('Installed component into ' + stockId + '!');
+    }
+
+    function removeAllocation(allocId) {
+      appData.allocations = appData.allocations.filter(a => a.allocId !== allocId);
+      saveData();
+      showToast('Unlinked component and returned to stock.');
+    }
+
+    function handleExpenseSubmit(e) {
+      e.preventDefault();
+      appData.expenses.unshift({
+        expId: 'E00' + (appData.expenses.length + 1),
+        date: new Date().toISOString().split('T')[0],
+        description: document.getElementById('exp-desc').value.trim(),
+        amount: Number(document.getElementById('exp-amount').value || 0),
+        linkedStockId: document.getElementById('exp-laptop-link').value
+      });
+      e.target.reset();
+      saveData();
+      showToast('Expense saved!');
+    }
+
+    function restoreDiaryDefaults() {
+      appData = {
+        laptops: INITIAL_LAPTOPS,
+        components: INITIAL_COMPONENTS,
+        allocations: [],
+        expenses: INITIAL_EXPENSES
+      };
+      saveData();
+      showToast('Restored all 13 Diary Entries!');
+    }
+
+    function clearToBlankWorkbook() {
+      appData = { laptops: [], components: [], allocations: [], expenses: [] };
+      saveData();
+      showToast('Started Blank Workbook!');
+    }
+
+    function escXml(str) {
+      return String(str === null || str === undefined ? '' : str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
+    }
+
+    // Genuine Multi-Sheet Microsoft Excel (.xls) Exporter
+    function exportExcelWorkbook() {
+      const { enrichedLaptops, enrichedComps } = computeData();
+
+      const availLaptops = enrichedLaptops.filter(l => l.status === 'Available');
+      const soldLaptops = enrichedLaptops.filter(l => l.status === 'Sold');
+      const availLaptopVal = availLaptops.reduce((s, l) => s + l.totalInvestment, 0);
+      const spareCompVal = enrichedComps.reduce((s, c) => s + c.remValue, 0);
+      const totalStockVal = availLaptopVal + spareCompVal;
+      const totalSales = soldLaptops.reduce((s, l) => s + Number(l.sellingPrice || 0), 0) +
+        enrichedComps.reduce((s, c) => s + Number(c.looseSalePrice || 0), 0);
+      const generalExp = appData.expenses
+        .filter(e => !e.linkedStockId)
+        .reduce((s, e) => s + Number(e.amount || 0), 0);
+      const netProfit = soldLaptops.reduce((s, l) => s + l.netProfit, 0) +
+        enrichedComps.reduce((s, c) => s + c.looseProfit, 0) - generalExp;
+      const spareCount = enrichedComps.reduce((s, c) => s + c.remQty, 0);
+
+      const laptopRows = enrichedLaptops.map(l => {
+        const sellCell = l.status === 'Sold' && Number(l.sellingPrice) > 0
+          ? `<Cell><Data ss:Type="Number">${Number(l.sellingPrice)}</Data></Cell>`
+          : `<Cell><Data ss:Type="String"></Data></Cell>`;
+        return `
+        <Row>
+          <Cell><Data ss:Type="String">${escXml(l.stockId)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(l.diaryNo || '')}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(l.purchaseDate)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(l.model)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(l.processor)}</Data></Cell>
+          <Cell><Data ss:Type="String">${l.isBarebone ? 'Barebone' : 'Complete'}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(l.status)}</Data></Cell>
+          <Cell><Data ss:Type="Number">${Number(l.basePrice || 0)}</Data></Cell>
+          <Cell><Data ss:Type="Number">${Number(l.ramCost || 0)}</Data></Cell>
+          <Cell><Data ss:Type="Number">${Number(l.ssdCost || 0)}</Data></Cell>
+          <Cell><Data ss:Type="Number">${Number(l.chgCost || 0)}</Data></Cell>
+          <Cell ss:Formula="=SUM(RC[-4]:RC[-1])"><Data ss:Type="Number">${Number(l.totalInvestment || 0)}</Data></Cell>
+          ${sellCell}
+          <Cell ss:Formula="=IF(ISNUMBER(RC[-1]), RC[-1]-RC[-2], &quot;Available&quot;)"><Data ss:Type="${l.status === 'Sold' ? 'Number' : 'String'}">${l.status === 'Sold' ? Number(l.netProfit) : 'Available'}</Data></Cell>
+          <Cell ss:Formula="=IF(ISNUMBER(RC[-1]), RC[-1]/2, &quot;&quot;)"><Data ss:Type="${l.status === 'Sold' ? 'Number' : 'String'}">${l.status === 'Sold' ? Number(l.netProfit) / 2 : ''}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(l.saleDate || '')}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(l.customerNotes || '')}</Data></Cell>
+        </Row>`;
+      }).join('');
+
+      const compRows = enrichedComps.map(c => `
+        <Row>
+          <Cell><Data ss:Type="String">${escXml(c.compId)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(c.purchaseDate)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(c.category)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(c.name)}</Data></Cell>
+          <Cell><Data ss:Type="Number">${Number(c.qtyPurchased || 0)}</Data></Cell>
+          <Cell><Data ss:Type="Number">${Number(c.unitCost || 0)}</Data></Cell>
+          <Cell><Data ss:Type="Number">${Number(c.qtyInstalled || 0)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(c.installedIds)}</Data></Cell>
+          <Cell><Data ss:Type="Number">${Number(c.qtySoldLoose || 0)}</Data></Cell>
+          <Cell ss:Formula="=RC[-5]-RC[-3]-RC[-1]"><Data ss:Type="Number">${Number(c.remQty || 0)}</Data></Cell>
+          <Cell ss:Formula="=RC[-1]*RC[-5]"><Data ss:Type="Number">${Number(c.remValue || 0)}</Data></Cell>
+          <Cell><Data ss:Type="Number">${Number(c.looseSalePrice || 0)}</Data></Cell>
+        </Row>`).join('');
+
+      const allocRows = appData.allocations.length > 0
+        ? appData.allocations.map(a => {
+            const comp = appData.components.find(c => c.compId === a.compId);
+            const lap = appData.laptops.find(l => l.stockId === a.stockId);
+            const unitCost = comp ? Number(comp.unitCost || 0) : 0;
+            const totalAdded = unitCost * Number(a.quantity || 1);
+            return `
+        <Row>
+          <Cell><Data ss:Type="String">${escXml(a.allocId)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(a.date)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(a.stockId)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(lap ? lap.model : '')}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(a.compId)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(comp ? comp.name : '')}</Data></Cell>
+          <Cell><Data ss:Type="Number">${Number(a.quantity || 1)}</Data></Cell>
+          <Cell><Data ss:Type="Number">${unitCost}</Data></Cell>
+          <Cell ss:Formula="=RC[-2]*RC[-1]"><Data ss:Type="Number">${totalAdded}</Data></Cell>
+        </Row>`;
+          }).join('')
+        : `<Row><Cell><Data ss:Type="String">No components linked yet</Data></Cell></Row>`;
+
+      const ledgerLaptopRows = enrichedLaptops.map(l => `
+        <Row>
+          <Cell><Data ss:Type="String">${escXml(l.purchaseDate)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(l.stockId)}</Data></Cell>
+          <Cell><Data ss:Type="String">${l.isBarebone ? 'Barebone Laptop Record' : 'Complete Laptop Record'}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(l.model + ' (' + l.processor + ')')}</Data></Cell>
+          <Cell><Data ss:Type="Number">${Number(l.totalInvestment || 0)}</Data></Cell>
+          <Cell><Data ss:Type="Number">${l.status === 'Sold' ? Number(l.sellingPrice || 0) : 0}</Data></Cell>
+          <Cell><Data ss:Type="Number">${l.status === 'Sold' ? Number(l.netProfit || 0) : 0}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(l.customerNotes || '')}</Data></Cell>
+        </Row>`).join('');
+
+      const expenseRows = appData.expenses.map(e => `
+        <Row>
+          <Cell><Data ss:Type="String">${escXml(e.date)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(e.expId)}</Data></Cell>
+          <Cell><Data ss:Type="String">Expense</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(e.description)}</Data></Cell>
+          <Cell><Data ss:Type="Number">${Number(e.amount || 0)}</Data></Cell>
+          <Cell><Data ss:Type="Number">0</Data></Cell>
+          <Cell><Data ss:Type="Number">-${Number(e.amount || 0)}</Data></Cell>
+          <Cell><Data ss:Type="String">${escXml(e.linkedStockId ? 'Linked to ' + e.linkedStockId : 'General Shop Expense')}</Data></Cell>
+        </Row>`).join('');
+
+      const xml = `<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+  <Styles>
+    <Style ss:ID="Header">
+      <Font ss:Bold="1" ss:Color="#FDE68A"/>
+      <Interior ss:Color="#09090B" ss:Pattern="Solid"/>
+    </Style>
+    <Style ss:ID="Title">
+      <Font ss:Bold="1" ss:Size="13" ss:Color="#D97706"/>
+    </Style>
+  </Styles>
+
+  <Worksheet ss:Name="1. Dashboard">
+    <Table>
+      <Column ss:Width="250"/>
+      <Column ss:Width="140"/>
+      <Row><Cell ss:StyleID="Title"><Data ss:Type="String">ES Laptops - Business Dashboard Summary</Data></Cell></Row>
+      <Row></Row>
+      <Row ss:StyleID="Header">
+        <Cell><Data ss:Type="String">Business Metric</Data></Cell>
+        <Cell><Data ss:Type="String">Value / Amount (Rs.)</Data></Cell>
+      </Row>
+      <Row><Cell><Data ss:Type="String">Active Stock Value (Unsold Laptops + Spare Parts)</Data></Cell><Cell><Data ss:Type="Number">${totalStockVal}</Data></Cell></Row>
+      <Row><Cell><Data ss:Type="String">Available Laptops Value (Rs.)</Data></Cell><Cell><Data ss:Type="Number">${availLaptopVal}</Data></Cell></Row>
+      <Row><Cell><Data ss:Type="String">Uninstalled RAM &amp; SSD Stock Value (Rs.)</Data></Cell><Cell><Data ss:Type="Number">${spareCompVal}</Data></Cell></Row>
+      <Row><Cell><Data ss:Type="String">Total Sales Revenue (Rs.)</Data></Cell><Cell><Data ss:Type="Number">${totalSales}</Data></Cell></Row>
+      <Row><Cell><Data ss:Type="String">General Shop Expenses (Rs.)</Data></Cell><Cell><Data ss:Type="Number">${generalExp}</Data></Cell></Row>
+      <Row><Cell><Data ss:Type="String">Net Business Profit (Rs.)</Data></Cell><Cell><Data ss:Type="Number">${netProfit}</Data></Cell></Row>
+      <Row><Cell><Data ss:Type="String">Available Laptops in Stock (Units)</Data></Cell><Cell><Data ss:Type="Number">${availLaptops.length}</Data></Cell></Row>
+      <Row><Cell><Data ss:Type="String">Sold Laptops (Units)</Data></Cell><Cell><Data ss:Type="Number">${soldLaptops.length}</Data></Cell></Row>
+      <Row><Cell><Data ss:Type="String">Uninstalled Spare RAM/SSD Parts (Units)</Data></Cell><Cell><Data ss:Type="Number">${spareCount}</Data></Cell></Row>
+    </Table>
+  </Worksheet>
+
+  <Worksheet ss:Name="2. Laptop Inventory">
+    <Table>
+      <Row ss:StyleID="Header">
+        <Cell><Data ss:Type="String">Stock ID</Data></Cell>
+        <Cell><Data ss:Type="String">Diary #</Data></Cell>
+        <Cell><Data ss:Type="String">Purchase Date</Data></Cell>
+        <Cell><Data ss:Type="String">Model</Data></Cell>
+        <Cell><Data ss:Type="String">Processor</Data></Cell>
+        <Cell><Data ss:Type="String">Type</Data></Cell>
+        <Cell><Data ss:Type="String">Status</Data></Cell>
+        <Cell><Data ss:Type="String">Base / Barebone Price</Data></Cell>
+        <Cell><Data ss:Type="String">RAM Cost</Data></Cell>
+        <Cell><Data ss:Type="String">SSD Cost</Data></Cell>
+        <Cell><Data ss:Type="String">Charger / Repair Cost</Data></Cell>
+        <Cell><Data ss:Type="String">Total Investment</Data></Cell>
+        <Cell><Data ss:Type="String">Selling Price</Data></Cell>
+        <Cell><Data ss:Type="String">Profit / Loss</Data></Cell>
+        <Cell><Data ss:Type="String">50/50 Partner Split</Data></Cell>
+        <Cell><Data ss:Type="String">Sale Date</Data></Cell>
+        <Cell><Data ss:Type="String">Notes</Data></Cell>
+      </Row>
+      ${laptopRows}
+    </Table>
+  </Worksheet>
+
+  <Worksheet ss:Name="3. RAM and SSD Stock">
+    <Table>
+      <Row ss:StyleID="Header">
+        <Cell><Data ss:Type="String">Comp ID</Data></Cell>
+        <Cell><Data ss:Type="String">Purchase Date</Data></Cell>
+        <Cell><Data ss:Type="String">Category</Data></Cell>
+        <Cell><Data ss:Type="String">Component Spec</Data></Cell>
+        <Cell><Data ss:Type="String">Qty Purchased</Data></Cell>
+        <Cell><Data ss:Type="String">Unit Cost (Rs.)</Data></Cell>
+        <Cell><Data ss:Type="String">Qty Installed</Data></Cell>
+        <Cell><Data ss:Type="String">Installed In Laptop ID</Data></Cell>
+        <Cell><Data ss:Type="String">Qty Sold Loose</Data></Cell>
+        <Cell><Data ss:Type="String">Remaining Qty</Data></Cell>
+        <Cell><Data ss:Type="String">Remaining Stock Value</Data></Cell>
+        <Cell><Data ss:Type="String">Loose Sale Price</Data></Cell>
+      </Row>
+      ${compRows}
+    </Table>
+  </Worksheet>
+
+  <Worksheet ss:Name="4. Component Allocation">
+    <Table>
+      <Row ss:StyleID="Header">
+        <Cell><Data ss:Type="String">Allocation ID</Data></Cell>
+        <Cell><Data ss:Type="String">Date Installed</Data></Cell>
+        <Cell><Data ss:Type="String">Laptop Stock ID</Data></Cell>
+        <Cell><Data ss:Type="String">Laptop Model</Data></Cell>
+        <Cell><Data ss:Type="String">Component ID</Data></Cell>
+        <Cell><Data ss:Type="String">Component Name</Data></Cell>
+        <Cell><Data ss:Type="String">Qty Installed</Data></Cell>
+        <Cell><Data ss:Type="String">Unit Cost</Data></Cell>
+        <Cell><Data ss:Type="String">Total Cost Added</Data></Cell>
+      </Row>
+      ${allocRows}
+    </Table>
+  </Worksheet>
+
+  <Worksheet ss:Name="5. Ledger and Expenses">
+    <Table>
+      <Row ss:StyleID="Header">
+        <Cell><Data ss:Type="String">Date</Data></Cell>
+        <Cell><Data ss:Type="String">ID / Ref</Data></Cell>
+        <Cell><Data ss:Type="String">Record Type</Data></Cell>
+        <Cell><Data ss:Type="String">Item / Description</Data></Cell>
+        <Cell><Data ss:Type="String">Total Purchase / Expense (Rs.)</Data></Cell>
+        <Cell><Data ss:Type="String">Sale Price (Rs.)</Data></Cell>
+        <Cell><Data ss:Type="String">Net Profit / Impact (Rs.)</Data></Cell>
+        <Cell><Data ss:Type="String">Notes</Data></Cell>
+      </Row>
+      ${ledgerLaptopRows}
+      ${expenseRows}
+    </Table>
+  </Worksheet>
+</Workbook>`;
+
+      const blob = new Blob([xml], { type: 'application/vnd.ms-excel' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'ES_Laptops_Accounting_Workbook.xls';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      showToast('Downloaded ES_Laptops_Accounting_Workbook.xls!');
+    }
+
+    window.onload = renderAll;
+  </script>
+</body>
+</html>
